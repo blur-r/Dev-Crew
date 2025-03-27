@@ -5,6 +5,8 @@ const fileNameDisplay = document.getElementById("fileName");
 const fileInput = document.getElementById("file-upload");
 
 const fileInputs = document.querySelectorAll(".file-input");
+const imgTxt = document.querySelector(".img-txt");
+const convert = document.querySelectorAll("#convertNow");
 
 
 fileInputs.forEach(input => {
@@ -30,4 +32,12 @@ subscribe.addEventListener('click', function() {
     subscribe.textContent = "Subscribed!";
     subscribe.style.backgroundColor = "green";
 })  
+
+convert.forEach(button => {
+    button.addEventListener('click', function(event) {
+        console.log("Convert button clicked");
+        event.preventDefault();
+        imgTxt.style.display = "flex";
+    });
+});
 
