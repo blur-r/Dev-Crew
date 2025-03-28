@@ -17,8 +17,12 @@
   <div  class="body"> <section id="home"></section>
     <div class="navigation">
     <div class="devCrew"> devcrew</div>
-    <div class="formats">FORMATS</div> 
-    <div class="converters">CONVERTERS</div>
+    <div class="converters">
+      <p><a href="#imgt">IMG - TXT</a></p>
+      <p><a href="#pdfd">PDF - DOC</a></p>
+      <p><a href="#imgd">AUDIO - TXT</a></p>
+
+    </div>
     </div>
     <div class="pageInfo" style="color: white;"> 
       <h1 style="margin-top: 50px;"> File conversion made easy</h1>
@@ -40,11 +44,18 @@
               <label for="cameraInput" class="file-upload">Click to take a Picture</label>
             </div>
             
-            <button id="convertNow" type="submit">Convert</button>
+            <button id="convertNow" type="submit" class="img-txt-btn">Convert</button>
           </form>  
           <div class="img-txt">
-            <p> {{ image_text }} </p>
-            <p>Test Content</p>
+            <div class="img-txt-container">
+              <p>
+                <button class="close-btn">&times;</button>
+                Dummy text1
+                
+              </p>
+              <button class="copy-button">Copy Text</button> 
+            </div>
+            
           </div>
       </div>
     </div>
@@ -74,9 +85,20 @@
             <form id="form"  method="post" enctype="multipart/form-data" class="">
               <input id="file-upload-audio" class="file-input"  type="file" name="Audio">
               <label for="file-upload-audio" class="file-upload">Click to Upload a File</label>
-              <button id="convertNow" type="submit">Convert</button>
+              <button id="convertNow" type="submit" class="audio-txt-btn">Convert</button>
             </form>   
         </div>    
+      </div>
+
+      <div class="audio-txt">
+        <div class="audio-txt-container">
+          <p>
+            <button class="close-btn2">&times;</button>
+            Dummy text2
+
+          </p>
+          <button class="copy-button">Copy Text</button> 
+        </div>
       </div>
     </div>
   </div> 
